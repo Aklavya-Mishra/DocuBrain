@@ -26,36 +26,7 @@ DocuBrain is a smart chatbot that answers questions **only** based on informatio
 #### 1. **Create a Project Folder**
 Open your terminal/command prompt and create a project folder.
 
-#### 2. **Set Up Python Environment (Optional but Recommended)**
-This creates an isolated space for this project so it doesn't affect other programs:
-
-**On Windows:**
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**On Mac/Linux:**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-#### 3. **Install Required Software**
-```bash
-pip install -r requirements.txt
-```
-
-#### 4. **Add Your OpenAI API Key**
-Open the `.env` file in a text editor and replace the placeholder:
-```
-OPENAI_API_KEY=sk-your-actual-api-key-here
-```
-Save the file.
-
----
-
-## How to Use DocuBrain
+#### 2. **How to Use DocuBrain**
 
 ### Running the App
 
@@ -144,16 +115,12 @@ Even with large PDFs (hundreds of pages), the bot processes them quickly using s
 
 ### Problem: "Error: Invalid OpenAI API Key"
 **Solution**:
-- Check that your API key is pasted correctly in the `.env` file
+- Check that your API key is pasted correctly as `Jupyter Environment Variables`.
 - Make sure there are no extra spaces before or after the key
 - Verify your OpenAI account has credits/is active
 
 ### Problem: "ModuleNotFoundError"
-**Solution**: Run the installation command again:
-```bash
-pip install -r requirements.txt
-```
-
+**Solution**: Run the installation cell again.
 ---
 
 ## Files Explained
@@ -169,7 +136,7 @@ pip install -r requirements.txt
 
 - Your PDFs are **not** sent to OpenAI
 - Only the questions and retrieved text are sent to OpenAI for answer generation
-- Your OpenAI API key is kept private in the `.env` file (don't share it!)
+- Your OpenAI API key is kept private as the `Jupyter Environment` variable (don't share it!)
 
 ---
 
