@@ -59,7 +59,7 @@ Save the file.
 
 ### Running the App
 
-1. Open the Jupyter notebook `rag.ipynb` in VS Code or your preferred Jupyter environment
+1. Open the Jupyter notebook `docuBrain.ipynb` in VS Code or your preferred Jupyter environment
 2. Run the cells in sequence from top to bottom:
    - Cell 1: Install dependencies
    - Cell 2: Import required libraries
