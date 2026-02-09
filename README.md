@@ -59,10 +59,16 @@ Save the file.
 
 ### Running the App
 
-Open terminal/command prompt in the project folder and run:
-```bash
-python main.py
-```
+1. Open the Jupyter notebook `rag.ipynb` in VS Code or your preferred Jupyter environment
+2. Run the cells in sequence from top to bottom:
+   - Cell 1: Install dependencies
+   - Cell 2: Import required libraries
+   - Cell 3: Load environment variables and API key
+   - Cells 4-8: Define helper functions
+   - Cell 9: Define main function
+   - Cell 10: Execute the main application
+
+3. When prompted, enter your PDF file paths (comma-separated)
 
 ### Example Conversation
 
@@ -152,7 +158,7 @@ pip install -r requirements.txt
 
 ## Files Explained
 
-- **main.py** - The main application (run this file)
+- **docuBrain.ipynb** - The main Jupyter notebook application (run this)
 - **requirements.txt** - List of software packages needed
 - **.env** - Your OpenAI API key (keep this private!)
 - **README.md** - This file
